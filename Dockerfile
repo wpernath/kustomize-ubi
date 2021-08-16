@@ -6,10 +6,12 @@ ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en'
 RUN microdnf install curl ca-certificates wget tar gzip bash podman buildah jq \
     && microdnf update \
     && microdnf clean all 
-    
-RUN curl -sLO https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv4.1.3/kustomize_v4.1.3_linux_amd64.tar.gz
+
+RUN wget https://github.com/mikefarah/yq/releases/download/v4.11.2/yq_linux_amd64 -o /usr/local/bin/yq    
+RUN curl -sLO https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv4.2.0/kustomize_v4.2.0_linux_amd64.tar.gz
 RUN tar -xzf kustomize*.tar.gz
 RUN cp kustomize /usr/local/bin/
+
 
 #USER 1001
 
