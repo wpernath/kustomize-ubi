@@ -4,8 +4,8 @@ A docker image based on Red Hat UBI 8.5 minimal to be used for demo purposes.
 ## Content of the image
 Originally just a simple kustomize container image, it's now a toolbox image, which I am using in my CI/CD chains. It contains the following tools:
 
-- based on Red Hat UBI minimal 8.5
-- Adds `Kustomize` (right now v4.5.2)
+- based on Red Hat UBI minimal 8.6
+- Adds `Kustomize` (right now v4.5.5)
 - Adds `yq` to read from YAML files
 - Adds `jq` to read from JSON files
 - Adds `wget` & `curl`
@@ -17,6 +17,7 @@ Originally just a simple kustomize container image, it's now a toolbox image, wh
 - kustomize-ubi:4.4.0
 - kustomize-ubi:4.4.1
 - kustomize-ubi:4.5.2
+- kustomize-ubi:4.5.5
 
 As of v4.4.1 it now also includes httpie (httpie.io)
 
