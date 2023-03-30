@@ -1,5 +1,5 @@
 # Kustomize-ubi / toolbox-ubi
-A docker image based on Red Hat UBI 8.7 minimal to be used for demo purposes.
+A container image based on Red Hat UBI 8.7 minimal to be used for demo purposes.
 
 ## Content of the image
 Originally just a simple kustomize container image, it's now a toolbox image, which I am using in my CI/CD chains. It contains the following tools:
@@ -18,11 +18,13 @@ Originally just a simple kustomize container image, it's now a toolbox image, wh
 - kustomize-ubi:4.4.1
 - kustomize-ubi:4.5.2
 - kustomize-ubi:4.5.5
-- kustomize-uni:4.5.7
+- kustomize-ubi:4.5.7
 
 As of v4.4.1 it now also includes httpie (httpie.io)
 
 As of v4.5.2 it now also includes kubectl (Kubernetes client)
+
+
 
 ## Dockerfile
 The docker file can be found here: [https://github.com/wpernath/kustomize-ubi](https://github.com/wpernath/kustomize-ubi)
